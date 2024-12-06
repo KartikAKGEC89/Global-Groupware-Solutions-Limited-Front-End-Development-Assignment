@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# EmployWise Front End Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **EmployWise Front End Assignment** is a React-based application demonstrating user management functionalities, integrated with the Reqres API. This project showcases essential features such as user authentication, paginated user lists, and user management, alongside additional bonus features for enhanced usability.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation & Running the Application](#installation)
+4. [API Endpoints](#api-endpoints)
+5. [Usage](#usage)
+6. [Error Handling](#error-handling)
+7. [Bonus Features](#bonus-features)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User Authentication**: Users can log in using predefined credentials.
+- **Paginated User List**: View a paginated list of users with details.
+- **Edit User Details**: Edit first name, last name, and email of users.
+- **Delete User**: Remove users from the list.
+- **Responsive UI**: Designed for accessibility across devices.
+- **Error Handling**: Gracefully handles API errors with feedback.
+- **Bonus Features**:
+  - Client-side search and filtering.
+  - Navigation using React Router.
+  - Hosted on a free server for easy access.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: Framework for building the user interface.
+- **Axios**: For making HTTP requests.
+- **React Router**: Enables navigation between pages.
+- **CSS Framework**: Tailwind CSS for styling.
+- **Local Storage**: Used for persisting the authentication token.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Ensure you have **Node.js** and **npm** installed on your system.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KartikAKGEC89/Global-Groupware-Solutions-Limited-Front-End-Development-Assignment.git
+   cd Global-Groupware-Solutions-Limited-Front-End-Development-Assignment
+   
+### Install dependencies:
+   
+- npm install
+- Running the Application
+- npm start
+- Start the development server: http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### API Endpoints
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Login: POST /login - Authenticate user and return a token.
+- User List: GET /users - Retrieve a paginated list of users.
+- Edit User: PUT /users/:id - Edit user details.
+- Delete User: DELETE /users/:id - Delete a user.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Usage
+- Login: Enter your credentials to log in and receive an authentication token.
+- View Users: Browse the paginated user list.
+- Edit User: Click on a user to update their details.
+- Delete User: Remove a user from the list by clicking the delete button.
 
-### Code Splitting
+### Error Handling
+- Provides feedback for API errors like failed login or network issues.
+- Displays error messages to guide users toward the next steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Bonus Features
+- Client-side Search and Filtering: Quickly find users or filter the list.
+- Navigation with React Router: Seamless page transitions.
+- Hosted Application: Accessible from a public server.
