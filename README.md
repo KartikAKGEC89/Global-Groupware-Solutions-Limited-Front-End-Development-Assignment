@@ -67,6 +67,8 @@ The **EmployWise Front End Assignment** is a React-based application demonstrati
 ### API Endpoints
 
 - Login: POST /login - Authenticate user and return a token.
+                     Email : eve.holt@reqres.in
+                     Password : cityslicka
 - User List: GET /users - Retrieve a paginated list of users.
 - Edit User: PUT /users/:id - Edit user details.
 - Delete User: DELETE /users/:id - Delete a user.
